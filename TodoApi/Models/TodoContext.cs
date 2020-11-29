@@ -6,6 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi.Models
 {
+    /// <summary>
+    /// The database context is the main class that coordinates Entity Framework functionalitiy for a data
+    /// model.
+    /// </summary>
     public class TodoContext: DbContext
     {
         public TodoContext(DbContextOptions<TodoContext> options)

@@ -13,5 +13,9 @@ namespace TodoApi.Models
         public long Id { get; set; }
         public string Name { get; set; }
         public bool IsComplete { get; set; }
+        /// <summary>
+        /// A secret added to the model. This must not be exposed in the API responses.
+        /// </summary>
+        public string Secret { get; set; }
     }
 }
